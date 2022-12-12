@@ -1,6 +1,6 @@
 const spinnerFunction = () => {
   let increaseTimer = 100;
-  const spinnerObject = {straightBar: '\r|  ', backwardBar: '\r/  ', dash: '\r-  ', fowardBar: '\r-  '};
+  const spinnerObject = {straightBar: '\r|  ', backwardBar: '\r/  ', dash: '\r-  ', fowardBar: '\r\\  ', straightBar2: '\r|  '};
   for (const property in spinnerObject) {
     setTimeout(() => {
       process.stdout.write(spinnerObject[property]);
